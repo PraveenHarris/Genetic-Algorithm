@@ -37,7 +37,6 @@ function checkForDeaths() {
         pipes.length = 0;
         pipes.push(new Pipe());
 
-
         movement.length = 0; // empty old values
 
         // selection
@@ -188,7 +187,6 @@ function updateAlive() {
 }
 function updateGeneration() {
     document.getElementById("generation").innerHTML = ""+generation;
-
 }
 function updateMax() {
     document.getElementById('maxGen').innerHTML = ""+generation;
