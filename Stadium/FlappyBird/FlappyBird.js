@@ -47,8 +47,13 @@ function checkForDeaths() {
         for (let i = 0; i < populationSize; i++) {
             let temp = '';
             for (let j = 0; j < fittest.length - 100; j++) {
-                if (fittest.charAt(j) !== ",")
-                    temp += fittest.charAt(j);
+                if (fittest.charAt(j) !== ",") {
+                    if (Math.random() < 0.95)
+                        temp += fittest.charAt(j);
+                    else
+                        temp += Math.round(Math.random())
+                }
+
             }
             // mutation
             for (let j = 0; j < 100; j++) {
